@@ -21,7 +21,7 @@ const compile = async function (templateName, data) {
 
 const pdfFunction = async function (req, res) {
   const abc = {
-    "title": " Frequency Allocation Board ",
+    "title": " Dynamic Pdf Genrator ",
     "user": req.body
   };
   console.log("abc data is: ", abc);
