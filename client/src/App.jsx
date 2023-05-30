@@ -8,7 +8,6 @@
       name: '',
       age: '',
       country: '',
-      approved:''
     });
     const [loading, setLoading] = useState(null);
     const [downloadBtn, setdownloadBtn] = useState(false);

@@ -17,9 +17,10 @@ hbs.registerHelper('equal', function (a, b, options) {
 
 const compile = async function (templateName, data) {
   const filePath = path.join(process.cwd(), 'templates', `${templateName}.hbs`);
-  const html = await fs.readFile(filePath, 'utf8');
+  const html = await fs.promises.readFile(filePath, 'utf8');
   return hbs.compile(html)(data);
 };
+
 
 const pdfFunction = async function (req, res) {
   const abc = {
